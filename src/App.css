@@ -44,3 +44,40 @@
   align-items: center;
   min-height: 100vh;
 }
+
+.enroll {
+  color: red;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.custom-segment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text{
+  font-weight: bold;
+  font-size: larger;
+}
+
+.enroll {
+  text-align: center;
+}
+
+.enroll-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.enroll-button {
+  margin: auto;
+}

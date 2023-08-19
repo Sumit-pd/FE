@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { createClientMessage, createCustomMessage } from 'react-chatbot-kit';
+import { setAge } from '../Actions/actions';
+import { useDispatch } from 'react-redux';
 const ActionProvider = ({ createChatBotMessage, setState, children }) => {
+  const dispatch = useDispatch()
 
   const name = () => {
     const message = createChatBotMessage("Enter Your Name")
@@ -38,6 +41,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
 
 
   const handleAgeClick = (num) => {
+    dispatch(setAge(num))
     const botMessage = createClientMessage(num);
     setState((prev) => ({
       ...prev,
