@@ -7,7 +7,6 @@ import Data from './components/Data'
 function App() {
   return (
     <div>
-
       <BrowserRouter>
         <Routes>
           <Route path='/chat' element=<ChatBotScreen /> />
