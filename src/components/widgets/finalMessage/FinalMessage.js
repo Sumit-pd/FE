@@ -23,7 +23,7 @@ const FinalMessage = (props) => {
 
     const buttonsMarkup = (
         <div className="option-button">
-            {`The bot will exit in ${count} seconds`}
+            The bot will exit in {count} seconds
         </div>
     );
 
